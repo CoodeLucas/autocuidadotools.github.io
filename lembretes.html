@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lembretes</title>
+  <!-- Link para o CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Meus Lembretes</h2>
+
+    <input type="text" id="textoLembrete" placeholder="Digite seu lembrete" required>
+
+    <select id="tipoLembrete">
+      <option value="água">Beber água</option>
+      <option value="remédio">Tomar remédio</option>
+    </select>
+
+    <input type="time" id="horaLembrete" required>
+
+    <button onclick="adicionarLembrete()">Adicionar Lembrete</button>
+
+    <ul id="listaLembretes"></ul>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro de Exercícios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Cronômetro de Exercícios</h2>
+
+    <input type="text" id="exercicio" placeholder="Digite o exercício" required>
+
+    <input type="number" id="tempo" placeholder="Tempo (minutos)" min="1" required>
+
+    <select id="ciclos">
+      <option value="1">1 ciclo</option>
+      <option value="2">2 ciclos</option>
+      <option value="3">3 ciclos</option>
+      <option value="4">4 ciclos</option>
+      <option value="5">5 ciclos</option>
+    </select>
+
+    <button onclick="iniciar()">Iniciar</button>
+
+    <div id="status"></div>
+    <div id="cronometro"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
